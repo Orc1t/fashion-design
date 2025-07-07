@@ -1,0 +1,39 @@
+html, body {
+    scroll-snap-type: y mandatory; /* Mengatur snap untuk scroll vertikal */
+}
+
+section {
+    flex: 0 0 100vw; /* Setiap section memiliki lebar 100% dari viewport */
+    height: 100vh; /* Setiap section memiliki tinggi 100% dari viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Menjaga gambar tetap di tengah */
+    scroll-snap-align: start; /* Mengatur snap untuk setiap section */
+}
+
+.one img, .two img, .three img, .four img {
+    width: 100vw; /* Gambar memenuhi lebar section */
+    height: 100vh; /* Gambar memenuhi tinggi section */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+
+#searchContainer {
+    transition: all 0.3s ease-in-out;
+    border-radius: 9999px; /* Membuat border oval */
+}
+
+#searchIcon {
+    transition: transform 0.3s ease-in-out;
+}
+
+#searchInput {
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+#overlay {
+    transition: opacity 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}

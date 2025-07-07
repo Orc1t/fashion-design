@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    
+<!-- Header -->
+    
+<header class='sticky top-0 flex border-b bg-white font-sans min-h-[70px] tracking-wide relative z-10'>
+    <div class='flex flex-wrap items-center justify-between sm:px-20 px-2 py-7 w-full max-w-screen-xl mx-auto'>
+      <a href="index.html" class="max-sm:hidden"><img src="Images/LOGO LUCERO HITAM.png" alt="logo" class='w-32' />
+      </a>
+      
+      <div id="collapseMenu"
+        class='max-lg:hidden lg:block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
+        <button id="toggleClose" class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border'>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-black" viewBox="0 0 320.591 320.591">
+            <path
+              d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+              data-original="#000000"></path>
+            <path
+              d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+              data-original="#000000"></path>
+          </svg>
+        </button>
+  
+        <ul
+          class='lg:flex lg:gap-x-10 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+          <li class='mb-6 hidden max-lg:block'>
+            <a href="javascript:void(0)"><alt="logo" class='w-36' />
+            </a>
+          </li>
+          
+          <li class='group max-lg:border-b max-lg:py-3 relative'>
+            <a href='javascript:void(0)'
+              class='hover:text-[#BEBEBE] text-black text-[20px] font-bold lg:hover:fill-[#DCDCDC] block'>Tops<svg
+                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block"
+                viewBox="0 0 24 24">
+                <path
+                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                  data-name="16" data-original="#000000" />
+              </svg>
+            </a>
+            <ul
+              class='absolute shadow-lg bg-white space-y-3 lg:top-5 max-lg:top-8 -left-6 min-w-[250px] z-50 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-6 transition-all duration-500'>
+              <li class='border-b py-2 '><a href='Buy _Shirt.html'
+                class='hover:text-[#BEBEBE] text-black text-[15px] font-bold block'>Shirt</a></li>
+              <li class='border-b py-2 '><a href='Buy_Hoodie.html'
+                class='hover:text-[#BEBEBE] text-black text-[15px] font-bold block'>Hoodie & Sweater</a></li>
+              <li class='border-b py-2 '><a href='Buy_Jacket.html'
+                class='hover:text-[#BEBEBE] text-black text-[15px] font-bold block'>Jacket & Outwear</a></li>
+              <li class='border-b py-2 '><a href='Buy_TankTop.html'
+                class='hover:text-[#BEBEBE] text-black text-[15px] font-bold block'>Tank Tops & Sleeveless</a></li>
+              <li class='border-b py-2 '><a href='Buy_Blouse.html'
+                class='hover:text-[#BEBEBE] text-black text-[15px] font-bold block'>Blouse & Tunic</a></li>
+            </ul>
+          </li>
+          
+          <li class='group max-lg:border-b max-lg:py-3 relative'>
+            <a href='javascript:void(0)'
+              class='hover:text-[#BEBEBE] text-black text-[20px] font-bold lg:hover:fill-[#DCDCDC] block'>Bottoms<svg
+                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block"
+                viewBox="0 0 24 24">
+                <path
+                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                  data-name="16" data-original="#000000" />
+              </svg>
+            </a>
+            <ul
+              class='absolute shadow-lg bg-white space-y-3 lg:top-5 max-lg:top-8 -left-6 min-w-[250px] z-50 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-6 transition-all duration-500'>
+              <li class='border-b py-2 '><a href='BOTTOMS_Pants.html'
+                class='hover:text-[#BEBEBE] text-black text-[15px] font-bold block'>Pants</a></li>
+              <li class='border-b py-2 '>
+                <a href='BOTTOMS_Shorts.html'
+                  class='hover:text-[#BEBEBE] text-black text-[15px] font-bold block'>Shorts</a>
+              </li>
+              <li class='border-b py-2 '><a href='BOTTOMS_Jeans.html'
+                class='hover:text-[#BEBEBE] text-black text-[15px] font-bold block'>Jeans</a></li>
+              <li class='border-b py-2 '><a href='BOTTOMS_Skirt.html'
+                class='hover:text-[#BEBEBE] text-black text-[15px] font-bold block'>Skirt</a></li>
+                <li class='border-b py-2 '><a href='BOTTOMS_Leggings.html'
+                  class='hover:text-[#BEBEBE] text-black text-[15px] font-bold block'>Leggings</a></li>
+            </ul>
+          </li>
+          <li class='max-lg:border-b max-lg:py-3'><a href='Nav_Headwear.html'
+            class='hover:text-[#BEBEBE] text-black text-[20px] font-bold block'>Headwear</a></li>
+          <li class='max-lg:border-b max-lg:py-3'><a href='Nav_Footwear.html'
+            class='hover:text-[#BEBEBE] text-black text-[20px] font-bold block'>Footwear</a></li>
+      </div>
+  
+      <div class='flex items-center space-x-8 max-lg:ml-auto'>
+
+        <a href="Favorit.html">
+        <span class="relative">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20px"
+            class="cursor-pointer fill-[#ffffff] hover:fill-[#ffffff] inline" viewBox="0 0 64 64">
+            <path
+              d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+              data-original="#000000"
+              fill="black"
+              stroke="black" 
+              stroke-width="2"/>
+          </svg>  </span>
+        </a>
+  
+          <a href="Cart.html">
+        <span class="relative">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+            class="cursor-pointer fill-[#000000] hover:fill-[#000000] inline scale-[1.2]" viewBox="0 0 512 512">
+            <path
+              d="M164.96 300.004h.024c.02 0 .04-.004.059-.004H437a15.003 15.003 0 0 0 14.422-10.879l60-210a15.003 15.003 0 0 0-2.445-13.152A15.006 15.006 0 0 0 497 60H130.367l-10.722-48.254A15.003 15.003 0 0 0 105 0H15C6.715 0 0 6.715 0 15s6.715 15 15 15h77.969c1.898 8.55 51.312 230.918 54.156 243.71C131.184 280.64 120 296.536 120 315c0 24.812 20.188 45 45 45h272c8.285 0 15-6.715 15-15s-6.715-15-15-15H165c-8.27 0-15-6.73-15-15 0-8.258 6.707-14.977 14.96-14.996zM477.114 90l-51.43 180H177.032l-40-180zM150 405c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm167 15c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm0 0"
+              data-original="#000000"></path>
+          </svg> </span>
+        </a>
+  
+          <a href="Collection.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+            </svg>      
+      </a>
+  
+      </div>
+      
+    </div>
+  </header>
+   
+  <!-- Header End -->
+
+
+<!-- Main Content -->
+    <div class="font-[sans-serif] bg-gray-100">
+        <div class="p-4 mx-auto lg:max-w-7xl md:max-w-4xl sm:max-w-xl max-sm:max-w-sm">
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-800 mb-6 sm:mb-10">Shirt</h2>
+  
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-xl:gap-4 gap-6">
+            <div class="bg-white rounded p-4 cursor-pointer hover:-translate-y-1 transition-all relative">
+              <div class="mb-4 bg-gray-100 rounded p-2">
+                <img src="Images/FOTO KAOS1.jpg" alt="Product 1"
+                  class="aspect-[33/35] w-full object-contain" />
+              </div>
+  
+              <div>
+                <div class="flex gap-2">
+                  <h5 class="text-base font-bold text-gray-800">Desert Shirt</h5>
+                  <h6 class="text-base text-gray-800 font-bold ml-auto">Rp 125.000</h6>
+                </div>
+                <p class="text-gray-500 text-[13px] mt-2">White Shirt, With Cool Desert Design.</p>
+                <div class="flex items-center gap-2 mt-4">
+                  <div
+                    class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+                      <path
+                        d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                        data-original="#000000"></path>
+                    </svg>
+                  </div>
+                  <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-blue-600 hover:bg-blue-700 text-white tracking-wide ml-auto outline-none border-none rounded">Add to cart</button>
+                </div>
+              </div>
+            </div>
+  
+            <div class="bg-white rounded p-4 cursor-pointer hover:-translate-y-1 transition-all relative">
+              <div class="mb-4 bg-gray-100 rounded p-2">
+                <img src="Images/FOTO KAOS1.jpg" alt="Product 2"
+                  class="aspect-[33/35] w-full object-contain" />
+              </div>
+  
+              <div>
+                <div class="flex gap-2">
+                  <h5 class="text-base font-bold text-gray-800">Desert Shirt</h5>
+                  <h6 class="text-base text-gray-800 font-bold ml-auto">Rp 125.000</h6>
+                </div>
+                <p class="text-gray-500 text-[13px] mt-2">White Shirt, With Cool Desert Design.</p>
+                <div class="flex items-center gap-2 mt-4">
+                  <div
+                    class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+                      <path
+                        d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                        data-original="#000000"></path>
+                    </svg>
+                  </div>
+                  <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-blue-600 hover:bg-blue-700 text-white tracking-wide ml-auto outline-none border-none rounded">Add to cart</button>
+                </div>
+              </div>
+            </div>
+  
+            <div class="bg-white rounded p-4 cursor-pointer hover:-translate-y-1 transition-all relative">
+              <div class="mb-4 bg-gray-100 rounded p-2">
+                <img src="Images/FOTO KAOS1.jpg" alt="Product 3"
+                  class="aspect-[33/35] w-full object-contain" />
+              </div>
+  
+              <div>
+                <div class="flex gap-2">
+                  <h5 class="text-base font-bold text-gray-800">Desert Shirt</h5>
+                  <h6 class="text-base text-gray-800 font-bold ml-auto">Rp 125.000</h6>
+                </div>
+                <p class="text-gray-500 text-[13px] mt-2">White Shirt, With Cool Desert Design.</p>
+                <div class="flex items-center gap-2 mt-4">
+                  <div
+                    class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+                      <path
+                        d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                        data-original="#000000"></path>
+                    </svg>
+                  </div>
+                  <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-blue-600 hover:bg-blue-700 text-white tracking-wide ml-auto outline-none border-none rounded">Add to cart</button>
+                </div>
+              </div>
+            </div>
+  
+            <div class="bg-white rounded p-4 cursor-pointer hover:-translate-y-1 transition-all relative">
+              <div class="mb-4 bg-gray-100 rounded p-2">
+                <img src="Images/FOTO KAOS1.jpg" alt="Product 3"
+                  class="aspect-[33/35] w-full object-contain" />
+              </div>
+  
+              <div>
+                <div class="flex gap-2">
+                  <h5 class="text-base font-bold text-gray-800">Desert Shirt</h5>
+                  <h6 class="text-base text-gray-800 font-bold ml-auto">Rp 125.000</h6>
+                </div>
+                <p class="text-gray-500 text-[13px] mt-2">White Shirt, With Cool Desert Design.</p>
+                <div class="flex items-center gap-2 mt-4">
+                  <div
+                    class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+                      <path
+                        d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                        data-original="#000000"></path>
+                    </svg>
+                  </div>
+                  <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-blue-600 hover:bg-blue-700 text-white tracking-wide ml-auto outline-none border-none rounded">Add to cart</button>
+                </div>
+              </div>
+            </div>
+  
+            <div class="bg-white rounded p-4 cursor-pointer hover:-translate-y-1 transition-all relative">
+              <div class="mb-4 bg-gray-100 rounded p-2">
+                <img src="Images/FOTO KAOS2.jpg" alt="Product 3"
+                  class="aspect-[33/35] w-full object-contain" />
+              </div>
+  
+              <div>
+                <div class="flex gap-2">
+                  <h5 class="text-base font-bold text-gray-800">Eu Te` Amo Shirt</h5>
+                  <h6 class="text-base text-gray-800 font-bold ml-auto">Rp 125.000</h6>
+                </div>
+                <p class="text-gray-500 text-[13px] mt-2">White Shirt, With Beutiful Sentence.</p>
+                <div class="flex items-center gap-2 mt-4">
+                  <div
+                    class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+                      <path
+                        d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                        data-original="#000000"></path>
+                    </svg>
+                  </div>
+                  <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-blue-600 hover:bg-blue-700 text-white tracking-wide ml-auto outline-none border-none rounded">Add to cart</button>
+                </div>
+              </div>
+            </div>
+  
+            <div class="bg-white rounded p-4 cursor-pointer hover:-translate-y-1 transition-all relative">
+              <div class="mb-4 bg-gray-100 rounded p-2">
+                <img src="Images/FOTO KAOS2.jpg" alt="Product 3"
+                  class="aspect-[33/35] w-full object-contain" />
+              </div>
+  
+              <div>
+                <div class="flex gap-2">
+                  <h5 class="text-base font-bold text-gray-800">Eu Te` Amo Shirt</h5>
+                  <h6 class="text-base text-gray-800 font-bold ml-auto">Rp 125.000</h6>
+                </div>
+                <p class="text-gray-500 text-[13px] mt-2">White Shirt, With Beutiful Sentence.</p>
+                <div class="flex items-center gap-2 mt-4">
+                  <div
+                    class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+                      <path
+                        d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                        data-original="#000000"></path>
+                    </svg>
+                  </div>
+                  <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-blue-600 hover:bg-blue-700 text-white tracking-wide ml-auto outline-none border-none rounded">Add to cart</button>
+                </div>
+              </div>
+            </div>
+  
+            <div class="bg-white rounded p-4 cursor-pointer hover:-translate-y-1 transition-all relative">
+              <div class="mb-4 bg-gray-100 rounded p-2">
+                <img src="Images/FOTO KAOS2.jpg" alt="Product 3"
+                  class="aspect-[33/35] w-full object-contain" />
+              </div>
+  
+              <div>
+                <div class="flex gap-2">
+                  <h5 class="text-base font-bold text-gray-800">Eu Te` Amo Shirt</h5>
+                  <h6 class="text-base text-gray-800 font-bold ml-auto">Rp 125.000</h6>
+                </div>
+                <p class="text-gray-500 text-[13px] mt-2">White Shirt, With Beutiful Sentence.</p>
+                <div class="flex items-center gap-2 mt-4">
+                  <div
+                    class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+                      <path
+                        d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                        data-original="#000000"></path>
+                    </svg>
+                  </div>
+                  <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-blue-600 hover:bg-blue-700 text-white tracking-wide ml-auto outline-none border-none rounded">Add to cart</button>
+                </div>
+              </div>
+            </div>
+  
+            <div class="bg-white rounded p-4 cursor-pointer hover:-translate-y-1 transition-all relative">
+              <div class="mb-4 bg-gray-100 rounded p-2">
+                <img src="Images/FOTO KAOS2.jpg" alt="Product 3"
+                  class="aspect-[33/35] w-full object-contain" />
+              </div>
+  
+              <div>
+                <div class="flex gap-2">
+                  <h5 class="text-base font-bold text-gray-800">Eu Te` Amo Shirt</h5>
+                  <h6 class="text-base text-gray-800 font-bold ml-auto">Rp 125.000</h6>
+                </div>
+                <p class="text-gray-500 text-[13px] mt-2">White Shirt, With Beutiful Sentence.</p>
+                <div class="flex items-center gap-2 mt-4">
+                  <div
+                    class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+                      <path
+                        d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                        data-original="#000000"></path>
+                    </svg>
+                  </div>
+                  <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-blue-600 hover:bg-blue-700 text-white tracking-wide ml-auto outline-none border-none rounded">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main Content End-->
+
+
+      <!-- Footer Main -->
+
+  <footer class="fixed bottom-4 left-1/2 transform -translate-x-1/2 w-[30%] bg-white border shadow-md flex justify-between py-3 px-6 rounded-full">
+    <!-- Home -->
+    <a href="index.html" class="flex flex-col items-center text-gray-600 hover:text-black">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 9L12 2l9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+        <polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
+    </a>
+  
+    <!-- Search -->
+    <form id="searchForm" class="relative flex items-center bg-gray-100 rounded-full px-3 transition-all duration-300 ease-in-out">
+      <svg id="searchIcon" class="text-gray-600 cursor-pointer transition-all duration-300 ease-in-out" 
+          xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <input id="searchInput" type="text" placeholder="Search..." 
+          class="absolute left-10 w-0 opacity-0 bg-transparent outline-none text-gray-800 transition-all duration-300 ease-in-out">
+      <button type="submit" id="searchButton" class="hidden"></button>
+  </form>
+  
+    <!-- Profile -->
+    <a href="profile.html" class="flex flex-col items-center text-gray-600 hover:text-black">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 21a8 8 0 0 0-16 0"/>
+        <circle cx="12" cy="7" r="4"/>
+      </svg>
+    </a>
+  </footer>
+  
+  <!-- Footer Main End -->
+
+
+<!-- Footer -->
+<footer class="font-sans tracking-wide bg-gray-50 px-10 pt-12 pb-6">
+  <div class="flex flex-wrap justify-between gap-10">
+    <div class="max-w-md">
+      <a href='index.html'>
+        <img src="Images/LOGO LUCERO HITAM.png" alt="logo" class='w-36' />
+      </a>
+      <div class="mt-6">
+        <p class="text-gray-600 leading-relaxed text-sm">Lucero is a clothing brand that blends timeless fashion with modern aesthetics. Designed for those who embrace individuality, it offers high-quality, stylish apparel that redefines everyday wear. With a focus on comfort, confidence, and creativity, Lucero brings versatile fashion essentials to elevate your wardrobe effortlessly.</p>
+      </div>
+      <ul class="mt-10 flex space-x-5">
+        <li>
+          <a href='https://www.instagram.com/luceroo.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 152 152">
+              <linearGradient id="a" x1="22.26" x2="129.74" y1="22.26" y2="129.74" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#fae100" />
+                <stop offset=".15" stop-color="#fcb720" />
+                <stop offset=".3" stop-color="#ff7950" />
+                <stop offset=".5" stop-color="#ff1c74" />
+                <stop offset="1" stop-color="#6c1cd1" />
+              </linearGradient>
+              <g data-name="Layer 2">
+                <g data-name="03.Instagram">
+                  <rect width="152" height="152" fill="url(#a)" data-original="url(#a)" rx="76" />
+                  <g fill="#fff">
+                    <path fill="#ffffff10" d="M133.2 26c-11.08 20.34-26.75 41.32-46.33 60.9S46.31 122.12 26 133.2q-1.91-1.66-3.71-3.46A76 76 0 1 1 129.74 22.26q1.8 1.8 3.46 3.74z" data-original="#ffffff10" />
+                    <path d="M94 36H58a22 22 0 0 0-22 22v36a22 22 0 0 0 22 22h36a22 22 0 0 0 22-22V58a22 22 0 0 0-22-22zm15 54.84A18.16 18.16 0 0 1 90.84 109H61.16A18.16 18.16 0 0 1 43 90.84V61.16A18.16 18.16 0 0 1 61.16 43h29.68A18.16 18.16 0 0 1 109 61.16z" data-original="#ffffff" />
+                    <path d="m90.59 61.56-.19-.19-.16-.16A20.16 20.16 0 0 0 76 55.33 20.52 20.52 0 0 0 55.62 76a20.75 20.75 0 0 0 6 14.61 20.19 20.19 0 0 0 14.42 6 20.73 20.73 0 0 0 14.55-35.05zM76 89.56A13.56 13.56 0 1 1 89.37 76 13.46 13.46 0 0 1 76 89.56zm26.43-35.18a4.88 4.88 0 0 1-4.85 4.92 4.81 4.81 0 0 1-3.42-1.43 4.93 4.93 0 0 1 3.43-8.39 4.82 4.82 0 0 1 3.09 1.12l.1.1a3.05 3.05 0 0 1 .44.44l.11.12a4.92 4.92 0 0 1 1.1 3.12z" data-original="#ffffff" />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+          
+        </li>
+        <li>
+
+          <a href="https://www.tiktok.com/@lucero.id?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">
+
+            <img src="Images/LogoTiktok.png"TikTok Logo" class="w-8 h-8 object-cover">
+          </a>
+          
+
+        </li>
+        <li>
+
+          <a href="https://wa.me/62895611989553" target="_blank" rel="noopener noreferrer">
+            <img src="Images/LogoWa.png" alt="TikTok Logo" class="w-8 h-8 object-cover">
+          </a>
+
+        </li>
+      </ul>
+    </div>
+
+    <div class="max-lg:min-w-[140px]">
+      <h4 class="text-gray-800 font-semibold max-sm:cursor-pointer">Services</h4>
+
+      <ul class="mt-6 space-y-4">
+        <li>
+          <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>Web Development</a>
+        </li>
+        <li>
+          <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>Pricing</a>
+        </li>
+        <li>
+          <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>Support</a>
+        </li>
+        <li>
+          <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>Client Portal</a>
+        </li>
+        <li>
+          <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>Resources</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="max-lg:min-w-[140px]">
+      <h4 class="text-gray-800 font-semibold max-sm:cursor-pointer">Platforms</h4>
+      <ul class="space-y-4 mt-6">
+        <li>
+          <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>Hubspot</a>
+        </li>
+        <li>
+          <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>Integration Services</a>
+        </li>
+        <li>
+          <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>Marketing Glossar</a>
+        </li>
+        <li>
+          <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>UIPath</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="max-lg:min-w-[140px]">
+      <h4 class="text-gray-800 font-semibold text-base relative max-sm:cursor-pointer">Company</h4>
+
+      <ul class="space-y-4 mt-6">
+        <li>
+          <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>About us</a>
+        </li>
+        <li>
+          <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>Careers</a>
+        </li>
+        <li>
+          <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>Blog</a>
+        </li>
+        <li>
+          <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>Portfolio</a>
+        </li>
+        <li>
+          <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>Events</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="max-lg:min-w-[140px]">
+      <h4 class="text-gray-800 font-semibold text-base relative max-sm:cursor-pointer">Additional</h4>
+
+      <ul class="space-y-4 mt-6">
+        <li>
+          <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>FAQ</a>
+        </li>
+        <li>
+          <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>Partners</a>
+        </li>
+        <li>
+          <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>Sitemap</a>
+        </li>
+        <li>
+          <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>Contact</a>
+        </li>
+        <li>
+          <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>News</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="mt-10 mb-6 border-gray-300" />
+
+  <div class="flex flex-wrap max-md:flex-col gap-4">
+    <ul class="md:flex md:space-x-6 max-md:space-y-2">
+      <li>
+        <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>Terms of Service</a>
+      </li>
+      <li>
+        <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>Privacy Policy</a>
+      </li>
+      <li>
+        <a href='javascript:void(0)' class='hover:text-gray-800 text-gray-600 text-sm'>Security</a>
+      </li>
+    </ul>
+
+    <p class='text-gray-600 text-sm md:ml-auto'>© Lucero. All rights reserved.</p>
+  </div>
+</footer>
+<!-- Footer End -->
+
+<script src="js/script.js"></script>
+   <div id="overlay" class="fixed inset-0 bg-black opacity-0 invisible"></div>
+</body>
+</html>
